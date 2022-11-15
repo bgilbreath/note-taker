@@ -9,7 +9,7 @@ const notes = require('./db/db.json');
 const uuid = require('./helpers/uuid.js')
 
 
-const PORT = 3001;
+const PORT = server.listen(process.env.PORT || 3001);
 
 const app = express();
 

@@ -9,7 +9,7 @@ A simple page for taking notes, making use of GET and POST routes.
 
 ## Installation
 
-Project is a webpage, that can be visited via URL, 
+Project is a webpage, that can be visited via URL, https://note-taker-app-but-2022.herokuapp.com/
 
 ## Usage
 
