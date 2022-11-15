@@ -63,7 +63,6 @@ const readAndAppend = (content, file) => {
 };
 
 
-
 //GET route for getting all notes
 app.get('/api/notes', (req, res) => {
     console.info(`${req.method} request received for notes`);
