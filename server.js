@@ -99,6 +99,21 @@ app.post('/api/notes', (req, res) => {
     }
   });
 
+
+//Attempt at DELETE route
+app.delete(`/api/notes/${id}`, function(req, res) {
+    notes.find(req.params.id).then(notes => {
+    notes.remove().then(notes => {
+        res.status(200).json(`Note deleted!`);
+    }).catch(err => {
+        res.status(400).send(`Delete not possible. Error details: ${err.message}`);
+    });
+}).catch(err => {
+    res.status(404).send(`Note not found. Error details: ${err.message}`);
+});
+})
+
+
 app.listen(PORT, () =>
   console.log(`App listening at http://localhost:${PORT} 🚀`)
 );

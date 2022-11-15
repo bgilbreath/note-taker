@@ -5,7 +5,7 @@ A simple page for taking notes, making use of GET and POST routes.
 
 ## Screen shot
 
-![Screen shot](/assets/README-screenshot.png)
+![Screen shot](/public/assets/README-screenshot.png)
 
 ## Installation
 
