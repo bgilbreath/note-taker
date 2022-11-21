@@ -101,7 +101,7 @@ app.post('/api/notes', (req, res) => {
 
 
 //Attempt at DELETE route
-app.delete(`/api/notes/${id}`, function(req, res) {
+/* app.delete(`/api/notes/${id}`, function(req, res) {
     notes.find(req.params.id).then(notes => {
     notes.remove().then(notes => {
         res.status(200).json(`Note deleted!`);
@@ -111,7 +111,7 @@ app.delete(`/api/notes/${id}`, function(req, res) {
 }).catch(err => {
     res.status(404).send(`Note not found. Error details: ${err.message}`);
 });
-})
+}) */
 
 
 app.listen(PORT, () =>
